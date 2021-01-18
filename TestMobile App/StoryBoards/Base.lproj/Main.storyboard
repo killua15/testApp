@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestMobile_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bobby" translatesAutoresizingMaskIntoConstraints="NO" id="gBD-9g-ZY8" customClass="AnimatableImageView" customModule="IBAnimatable">
+                                <rect key="frame" x="11" y="298" width="392" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="0Qy-LU-aRV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prove your worth" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKB-Ae-tsV" customClass="AnimatableLabel" customModule="IBAnimatable">
+                                <rect key="frame" x="20" y="225.5" width="374" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4V8-8K-P6h" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="82" y="637" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HzT-z4-4XO"/>
+                                    <constraint firstAttribute="width" constant="50" id="nh3-Oz-3LW"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="previous"/>
+                                <connections>
+                                    <action selector="actionPreviousButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sDq-eO-2fO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yf-Ql-c0v" customClass="AnimatableButton" customModule="IBAnimatable">
+                                <rect key="frame" x="276" y="637" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SB8-as-Z5n"/>
+                                    <constraint firstAttribute="width" constant="50" id="Uf9-71-WiG"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="next"/>
+                                <connections>
+                                    <action selector="actionNextbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Exd-Zy-JAQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gBD-9g-ZY8" secondAttribute="trailing" constant="11" id="4ca-Du-FD4"/>
+                            <constraint firstItem="gBD-9g-ZY8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="11" id="5DY-OK-TOh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9yf-Ql-c0v" secondAttribute="trailing" constant="88" id="KNw-p5-RiA"/>
+                            <constraint firstItem="9yf-Ql-c0v" firstAttribute="top" secondItem="gBD-9g-ZY8" secondAttribute="bottom" constant="39" id="WFh-Kg-Hrm"/>
+                            <constraint firstItem="gBD-9g-ZY8" firstAttribute="top" secondItem="CKB-Ae-tsV" secondAttribute="bottom" constant="28" id="YXz-p6-4If"/>
+                            <constraint firstItem="4V8-8K-P6h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="ZgB-zs-fQo"/>
+                            <constraint firstItem="4V8-8K-P6h" firstAttribute="top" secondItem="gBD-9g-ZY8" secondAttribute="bottom" constant="39" id="b10-2d-Qtl"/>
+                            <constraint firstItem="gBD-9g-ZY8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ecb-I2-8bY"/>
+                            <constraint firstItem="gBD-9g-ZY8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qhR-Wb-krS"/>
+                            <constraint firstItem="CKB-Ae-tsV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vxw-ak-iV0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CKB-Ae-tsV" secondAttribute="trailing" constant="20" id="xqr-26-SWL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageComic" destination="gBD-9g-ZY8" id="cPb-Yp-4LB"/>
+                        <outlet property="nextButton" destination="9yf-Ql-c0v" id="lk0-B6-Fu3"/>
+                        <outlet property="previousButton" destination="4V8-8K-P6h" id="zny-7d-cY6"/>
+                        <outlet property="titleComic" destination="CKB-Ae-tsV" id="N0b-yg-cRX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="41.517857142857139"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="4V8-8K-P6h">
+            <size key="intrinsicContentSize" width="60" height="60"/>
+        </designable>
+        <designable name="9yf-Ql-c0v">
+            <size key="intrinsicContentSize" width="60" height="60"/>
+        </designable>
+        <designable name="CKB-Ae-tsV">
+            <size key="intrinsicContentSize" width="264.5" height="44.5"/>
+        </designable>
+        <designable name="gBD-9g-ZY8">
+            <size key="intrinsicContentSize" width="333" height="102.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="bobby" width="333" height="102.5"/>
+        <image name="next" width="60" height="60"/>
+        <image name="previous" width="60" height="60"/>
+    </resources>
+</document>
